@@ -1,0 +1,86 @@
+name: Update profile assets
+
+on:
+  schedule:
+    - cron: '23 22 * * *' # 每天北京时间 06:23
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+
+      - name: Generate light stats
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide_border=true&bg_color=f7f5fc&title_color=8265a7&icon_color=9b8ac4&text_color=53576b&border_radius=16&card_width=440&disable_animations=true
+          path: assets/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Generate dark stats
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide_border=true&bg_color=1c1b29&title_color=c4aff0&icon_color=b4a0dc&text_color=c6c6d7&border_radius=16&card_width=440&disable_animations=true
+          path: assets/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Generate light languages
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&bg_color=f7f5fc&title_color=8265a7&text_color=53576b&border_radius=16&card_width=440&disable_animations=true
+          path: assets/languages-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Generate dark languages
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_border=true&bg_color=1c1b29&title_color=c4aff0&text_color=c6c6d7&border_radius=16&card_width=440&disable_animations=true
+          path: assets/languages-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Generate contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            assets/snake-light.svg?color_snake=#9b8ac4&color_dots=#eeeaf5,#ddd3ef,#c3b0df,#a58bcc,#8265a7
+            assets/snake-dark.svg?palette=github-dark&color_snake=#c4aff0&color_dots=#252334,#413750,#675080,#9574b4,#c4aff0
+
+      - name: Commit refreshed images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-*.svg assets/languages-*.svg assets/snake-*.svg
+          if git diff --cached --quiet; then
+            echo "Profile images are already up to date."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile images"
+          git pull --rebase origin main
+          git push origin HEAD:main
