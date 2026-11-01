@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="250" viewBox="0 0 960 250" role="img" aria-labelledby="title desc">
   <title id="title">Hi, I'm Aum</title>
-  <desc id="desc">Python, Rust and AI companions. A pastel banner with a little cat.</desc>
+  <desc id="desc">A pastel banner with a little cat.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#35263f"/><stop offset="1" stop-color="#23374b"/>
@@ -14,10 +14,9 @@
     <circle cx="24" cy="230" r="95" fill="#b4a0dc" opacity=".06"/>
     <path d="M0 220 Q170 160 340 213 T680 216 T960 202 V250 H0Z" fill="#2a253a" opacity=".65"/>
     <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-      <text x="62" y="64" font-size="13" letter-spacing="4" fill="#bdb3d0">AUMNERTIC / HELLO WORLD</text>
-      <text x="60" y="126" font-size="48" font-weight="700" fill="#ece6fa">Hi, I'm Aum.</text>
-      <text x="63" y="168" font-size="17" fill="#bdb3d0">Python · Rust · AI companions</text>
-      <text x="63" y="203" font-size="13" fill="#bdb3d0" opacity=".85">Learning by building, one little idea at a time.</text>
+      <text x="62" y="80" font-size="13" letter-spacing="4" fill="#bdb3d0">AUMNERTIC</text>
+      <text x="60" y="142" font-size="48" font-weight="700" fill="#ece6fa">Hi, I'm Aum.</text>
+      <text x="63" y="184" font-size="17" fill="#bdb3d0">Python · Rust · AI companions</text>
     </g>
     <g transform="translate(718 46)" stroke="#b4a0dc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="64" cy="82" r="79" fill="#1c1b29" opacity=".52" stroke="none"/>
