@@ -1,14 +1,11 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg" />
-  <img src="assets/header-light.svg" alt="Aum：学生，在杭州。写一点 Rust 和 Python。" width="100%" />
-</picture>
+### 你好，我是 Aum
 
-嗨，我是 Aum。最近大部分时间都在折腾 [neko](https://github.com/Aumnertic/neko)，一个 AI 伙伴项目。想让它记得之前聊过什么，说话也像同一个角色，而不是每次都从头开始。很多东西是边做边学的，有时候会写到[博客](https://aumnertic.top/)上。
+杭州师范大学在读。
 
-<p align="center">
-  <a href="https://github.com/Aumnertic/neko"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-neko-dark.svg" /><img src="assets/card-neko-light.svg" alt="neko：AI 伙伴本体，Rust 核心加 Python 应用" width="32%" /></picture></a>
-  <a href="https://github.com/Aumnertic/neko-mind"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-neko-mind-dark.svg" /><img src="assets/card-neko-mind-light.svg" alt="neko-mind：neko 的运行时，负责上下文和记忆" width="32%" /></picture></a>
-  <a href="https://github.com/Aumnertic/vman-py"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-vman-py-dark.svg" /><img src="assets/card-vman-py-light.svg" alt="vman-py：扫描、记录、检查本机 Python 虚拟环境的小工具" width="32%" /></picture></a>
-</p>
+最近在研究 [GreptimeDB](https://github.com/GreptimeTeam/greptimedb)，一个用 Rust 写的开源时序数据库。接下来大概会写一些 Rust 相关的东西，也会记在[博客](https://aumnertic.top/)上。
 
-<!-- 横幅和卡片由 scripts/make_assets.py 生成：改完文字后运行 python3 scripts/make_assets.py assets -->
+业余写过的一些小东西：
+
+- [neko](https://github.com/Aumnertic/neko)：AI 伙伴项目，Rust 核心加 Python 应用
+- [neko-mind](https://github.com/Aumnertic/neko-mind)：neko 的运行时，负责上下文和记忆
+- [vman-py](https://github.com/Aumnertic/vman-py)：扫描、记录、检查本机 Python 虚拟环境的命令行工具
