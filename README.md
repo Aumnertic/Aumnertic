@@ -8,7 +8,7 @@
 aum@aumnertic:~$ whoami  —  make it fast & keep it small.
 ```
 
-你好，我是 **Aum**，杭州师范大学在读。
+你好，我是 **Aum**，本科大二在读。
 
 最近在参与 [GreptimeDB](https://github.com/GreptimeTeam/greptimedb)（用 Rust 写的开源时序数据库，OSPP · 面向查询场景的 CBO），平时主要研究数据库内核、存储引擎与 SQL，技术笔记都记在[博客](https://blog.aumnertic.top)上。
 
