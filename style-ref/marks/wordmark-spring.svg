@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 572 118" overflow="visible" role="img">
+  <title>Aumnertic</title>
+  <defs>
+    <path id="wm-main" d="M4 98 C22 96 42 62 60 28 C66 16 68 6 76 6 C84 6 83 22 84 42 C86 66 88 92 98 99 C106 104 114 92 118 76 C120 68 121 60 122 56 C120 72 116 96 132 99 C146 102 152 80 156 56 C154 76 151 96 160 99 C166 101 172 94 178 82 C180 74 181 64 182 56 C182 72 182 88 181 99 C184 76 191 56 201 56 C210 56 211 70 209 99 C212 76 218 56 228 56 C237 56 238 70 236 99 C240 88 245 70 249 56 C249 72 249 88 248 99 C251 76 260 56 272 56 C284 56 286 70 284 90 C284 99 292 102 300 96 C314 86 330 72 328 61 C326 51 312 51 306 62 C300 76 302 100 321 100 C331 100 339 92 344 84 C348 76 351 64 353 56 C354 72 354 88 353 99" />
+    <path id="wm-shoulder" d="M353 74 C357 62 364 56 374 56 C388 56 404 55 420 53" />
+    <path id="wm-tic" d="M392 30 C392 58 389 88 394 97 C398 103 408 100 416 88 C420 80 423 66 425 56 C424 74 422 94 428 99 C433 103 440 96 446 86 C456 68 468 56 478 56 C485 56 487 63 482 66 C478 68 474 65 472 62 C464 60 455 66 452 78 C448 91 456 100 470 100 C492 100 516 86 542 64" />
+    <path id="wm-bar" d="M14 66 C40 58 70 56 104 60" />
+  </defs>
+  <g transform="skewX(-9) translate(16 0)">
+    <g fill="none" stroke="#2d463c" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+      <g><use href="#wm-main" x="-2.95" y="2.06" /><use href="#wm-main" x="-2.36" y="1.65" /><use href="#wm-main" x="-1.77" y="1.24" /><use href="#wm-main" x="-1.18" y="0.83" /><use href="#wm-main" x="-0.59" y="0.41" /><use href="#wm-main" x="0.00" y="-0.00" /><use href="#wm-main" x="0.59" y="-0.41" /><use href="#wm-main" x="1.18" y="-0.83" /><use href="#wm-main" x="1.77" y="-1.24" /><use href="#wm-main" x="2.36" y="-1.65" /><use href="#wm-main" x="2.95" y="-2.06" /></g>
+      <g><use href="#wm-shoulder" x="-2.95" y="2.06" /><use href="#wm-shoulder" x="-2.36" y="1.65" /><use href="#wm-shoulder" x="-1.77" y="1.24" /><use href="#wm-shoulder" x="-1.18" y="0.83" /><use href="#wm-shoulder" x="-0.59" y="0.41" /><use href="#wm-shoulder" x="0.00" y="-0.00" /><use href="#wm-shoulder" x="0.59" y="-0.41" /><use href="#wm-shoulder" x="1.18" y="-0.83" /><use href="#wm-shoulder" x="1.77" y="-1.24" /><use href="#wm-shoulder" x="2.36" y="-1.65" /><use href="#wm-shoulder" x="2.95" y="-2.06" /></g>
+      <g><use href="#wm-tic" x="-2.95" y="2.06" /><use href="#wm-tic" x="-2.36" y="1.65" /><use href="#wm-tic" x="-1.77" y="1.24" /><use href="#wm-tic" x="-1.18" y="0.83" /><use href="#wm-tic" x="-0.59" y="0.41" /><use href="#wm-tic" x="0.00" y="-0.00" /><use href="#wm-tic" x="0.59" y="-0.41" /><use href="#wm-tic" x="1.18" y="-0.83" /><use href="#wm-tic" x="1.77" y="-1.24" /><use href="#wm-tic" x="2.36" y="-1.65" /><use href="#wm-tic" x="2.95" y="-2.06" /></g>
+      <g><use href="#wm-bar" x="-2.95" y="2.06" /><use href="#wm-bar" x="-2.36" y="1.65" /><use href="#wm-bar" x="-1.77" y="1.24" /><use href="#wm-bar" x="-1.18" y="0.83" /><use href="#wm-bar" x="-0.59" y="0.41" /><use href="#wm-bar" x="0.00" y="-0.00" /><use href="#wm-bar" x="0.59" y="-0.41" /><use href="#wm-bar" x="1.18" y="-0.83" /><use href="#wm-bar" x="1.77" y="-1.24" /><use href="#wm-bar" x="2.36" y="-1.65" /><use href="#wm-bar" x="2.95" y="-2.06" /></g>
+    </g>
+    <circle fill="#d46b82" cx="426" cy="34" r="4.6" />
+  </g>
+</svg>

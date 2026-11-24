@@ -23,6 +23,7 @@ aum@aumnertic:~$ whoami  —  make it fast & keep it small.
 
 - **Stack**：`Rust`（主力） · `C++` · `Python` · `Go` · `Neovim`
 - **Links**：[个人主页](https://aumnertic.top) · [博客](https://blog.aumnertic.top) · [邮箱](mailto:me@aumnertic.top) · [X](https://x.com/Aumnertic) · [小红书](https://xhslink.cn/o/39cvkZgQqW8)
+- **创作资料**：[Aumnertic 风格参考](style-ref/)
 
 <div align="center">
   <br />
